@@ -1,0 +1,154 @@
+@media screen and (max-width:640px) {
+	.m-hidden {
+    display:none!important;
+	}
+	.m-shown {
+	    display:inline-block!important;
+	}
+    header {}
+
+    header #logo {}
+
+    header #logo span {
+        display: none;
+    }
+
+    header .main-menu {
+        position: relative;
+    }
+
+    header .main-menu ul {
+        position: fixed;
+        right: 0;
+        top: 48px;
+        background: #333;
+        width: 240px;
+        height: calc(100vh - 46px);
+        transform: translateX(100%);
+        transition: var(--transition-regular);
+    }
+
+    body.on_menu header .main-menu ul {
+        transform: none;
+        overflow: auto;
+        opacity: 1;
+    }
+
+    header .main-menu li {
+        display: block;
+    }
+
+    header .main-menu li .sub {
+        position: relative;
+        left: 0;
+        top: 0;
+        padding: 0;
+        background: transparent;
+    }
+
+    header .main-menu li .sub ul {
+        width: auto;
+        height: auto;
+        position: relative;
+        right: 0;
+        top: 0;
+        background: transparent;
+        padding-left: 32px;
+    }
+
+    #menu-noti .sub ul {
+        width: auto;
+    }
+
+    header .main-menu li .sub ul li a {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+        border-radius: 0;
+        text-align: left;
+        background: transparent!important;
+    }
+
+    header .main-menu li .btn {
+        margin: 12px 12px;
+    }
+
+    header .main-menu .menu-icon .icon {}
+
+    header .main-menu .menu-icon .tooltip-note {
+        position: relative;
+        display: inline-block;
+        color: white;
+        opacity: 1;
+        text-align: left;
+        width: auto;
+        bottom: initial;
+        left: initial;
+        transform: none;
+    }
+
+    header .main-menu li span {}
+
+    header .main-menu li>a,
+    header .main-menu li>span {
+        color: white;
+    }
+    body {}
+
+    body.on_menu {
+        height: 100vh;
+        overflow: hidden;
+    }
+    #lookup {}
+
+    #lookup .form-group {}
+
+    #lookup .result {}
+
+    #map-wrapper {}
+
+    #lookup #map-wrapper {
+        display: none;
+    }
+
+    /* job management */
+    #job-management {}
+
+    #job-management .search-panel {
+        width: 100%;
+        margin: 0;
+    }
+
+    #job-management .listing {
+        padding-right: 0;
+        padding-left: 0;
+        max-height: none;
+    }
+    #job-management .applicant-item .info,
+    #job-management .employer-info {
+        display: block;
+    }
+    #job-management .job-detail .action a {
+        margin-bottom: 4px;
+    }
+
+    #job-management .applicant-item .info .profile {
+        margin-bottom: 12px;
+    }
+    #job-management .progress .step:before {
+        width: 80%;
+    }
+
+    .form-group .form .form-content.form-update_gallery #sortable {
+        padding: 0;
+    }
+    /* job item */
+    .job-item {}
+
+    .job-item .meta ul {
+        display: block;
+    }
+
+    .job-item .meta li {
+        width: 100%;
+        margin-bottom: 4px;
+    }
+}
