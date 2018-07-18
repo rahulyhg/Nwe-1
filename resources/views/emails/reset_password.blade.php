@@ -1,0 +1,1 @@
+mật khẩu mới của bạn là : {{ $password }}
